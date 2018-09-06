@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>接口测试</title>
+</head>
+<body>
+<main>
+    <div>
+        <div>
+            <div>输入GET请求地址：</div>
+            <input type="text" v-model="inputURL">
+            <a class="button is-info is-rounded" @click="handleClick">调用接口</a>
+        </div>
+        <div>
+            <div>输入字符串：</div>
+            <input type="text" v-model="inputStr">
+            <a class="button is-info is-rounded" @click="formatStr">格式化</a>
+        </div>
+    </div>
+    <div>
+        <div>JSON：</div>
+        <div id="jsonEditor"></div>
+    </div>
+</main>
+</body>
+</html>
